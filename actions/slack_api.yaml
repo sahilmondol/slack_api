@@ -1,0 +1,12 @@
+name: "slack_api"
+pack: slack_api
+runner_type: "python-script"
+description: "Publishing messages to slack."
+enabled: true
+entry_point: "slack_api.py"
+parameters:
+    message:
+        type: "string"
+        description: "StackStorm with argument!."
+        required: true
+        position: 0
