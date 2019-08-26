@@ -1,16 +1,16 @@
-name: "slack_api"
+name: "slack_api_retrieve"
 pack: slack_api
 runner_type: "python-script"
 description: "Publishing messages to slack."
 enabled: true
-entry_point: "slack_api.py"
+entry_point: "slack_api_retrieve.py"
 parameters:
-    message:
+    token:
         type: "string"
         description: "StackStorm with argument!."
         required: true
         position: 0
-    token:
+    time:
         type: "string"
         description: "StackStorm with argument!."
         required: true
